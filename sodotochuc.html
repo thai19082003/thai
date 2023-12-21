@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        header {
+            padding: 30px;
+            background: rgb(0, 166, 255);
+            overflow: hidden;
+        }
+        header img{
+            width: 150px;
+            height: auto;
+            float: left;
+        }
+        header .noidung{
+            float: left;
+            padding-left: 30px;
+        }
+        .search{
+            float: right;
+            line-height: 40px;
+            padding-right: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:rgb(0, 149, 255);
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(0, 166, 255);
+        }
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .leftcolumn {   
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .fakeimg img{
+            width: 300px;
+            height: auto;
+            padding: 20px;
+        }
+        .fakeimg a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 0;
+        }
+        .fakeimg a:hover{
+            color: cadetblue;
+        }
+       
+        .anh img{
+            float: left;
+            width: 20%;
+            height: 150px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: chartreuse;
+            box-shadow: 0 0 5px blue;
+        }
+        .anh h3{
+            color: red;
+            text-align: center;
+        }
+        .anh img:hover{
+            box-shadow: 0 0 5px red;
+            background-color: cyan;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            padding: 15px;
+            background: rgb(0, 166, 255);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        footer img{
+            width: 150px;
+            height: auto;
+            float: left;
+            padding-right: 30px;
+            border-right: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo1.jpg" alt="">
+        <div class="noidung">
+            <h2 style="color: white;">NGÀNH GD&ĐT TP HẢI PHÒNG </h2>
+            <h1 style="color: white;">TRƯỜNG THPT Hermann Gmeiner Hải Phòng<h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="dropdown">
+              <a class="dropbtn" href="gioithieu.html">Giới thiệu</a>
+              <div class="dropdown-content">
+                <a href="sodotochuc.html">Sơ đồ tổ chức</a>
+                <a href="thuvien.html">Thư viện<nav></nav></a>
+              </div>
+            </li>
+            <li><a href="lienhe.html">Liên hệ </a></li>
+            <li><a href="gopy.html">Góp ý</a></li>
+            <li><a href="hoidap.html">Hỏi đáp</a></li>
+           
+          </ul>
+    </nav>
+  <center><h3>Sơ đồ tổ chức</h3></center>
+  <p><b>Các cấp học:</b></p>
+  <p>Trường PT Hermann Gmeiner là trường có 3 cấp học là Tiểu học, Trung học cơ sở và Trung học phổ thông.</p>
+  <p>Năm học 2020-2021, toàn trường có 31 lớp học với gần 1.100 học sinh đang theo học.</p>
+  <p>Học sinh được học bán trú từ lớp 1 đến hết lớp 12 theo nguyện vọng của phụ huynh học sinh.</p>
+  <p><b>Cơ cấu tổ chức gồm:</b></p>
+  <p><b>Ban giám hiệu: 03 đồng chí</b></p>
+  <p>+ Thầy: Trịnh Khắc Phúc- Bí thư chi bộ- Hiệu trưởng nhà trường</p>
+  <p>+ Thầy: Vũ Duy Nghị- Phó hiệu trưởng- Thạc sỹ - Giáo viên Toán.</p>
+  <p>+ Cô: Nguyễn Thị Thuận- Phó hiệu trưởng- Giáo viên Tiểu học.</p>
+  <p><b>Tổ Khoa học tự nhiên:</b></p>
+  <p>+ Thầy: Đỗ Ngọc Đảng- Tổ trưởng chuyên môn- Giáo viên Tin+ Thể dục.</p>
+  <p>+ Thầy: Bùi Sơn Lâm- Giáo viên Toán.</p>
+  <p>+ Thầy: Trịnh Văn Cường- Thạc sỹ- Giáo viên Toán+ Lí.</p>
+  <p>+ Thầy: Đào Văn Chỉnh- Giáo viên Vật Lí</p>
+  <p>+ Cô: Nguyễn Thị  Hương- Thạc sỹ- Giáo viên Toán.</p>
+  <p>+ Cô: Đào Thị Kim Dung- Giáo viên Sinh học.</p>
+  <p>
+    + Cô: Đỗ Thị Mai Lan- Giáo viên Tin.
+  </p>
+  <p>Và nhiều thầy cô giáo khác trong các ban của nhà trường ...
+
+  </p>
+  <footer>
+    <img src="image/logo1.jpg" alt="">
+        <h5 style="padding-left: 200px;color: #f1f1f1;">Trường PT Hermann Gmeiner Hải Phòng<h5>
+        <h5 style="padding-left: 200px;color: #f1f1f1;">Địa chỉ:543 Nguyễn Bỉnh Khiêm, Hải An, Hải Phòng <br>Điện thoại:0977341659</h5>
+   </footer>
+</body>
+</html>
+
